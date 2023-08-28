@@ -1,0 +1,1073 @@
+@font-face {
+  font-family: "Proxima Nova-Black";
+  src: url("../font/ProximaNova-Black.ttf");
+}
+
+@font-face {
+  font-family: "Proxima Nova-Bold";
+  src: url("../font/ProximaNova-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Proxima Nova-ExtraBold";
+  src: url("../font/ProximaNova-Extrabld.ttf");
+}
+
+@font-face {
+  font-family: "Proxima Nova-Regular";
+  src: url("../font/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Proxima Nova-SemiBold";
+  src: url("../font/ProximaNova-Semibold.ttf");
+}
+
+body {
+  font-family: Proxima Nova-Bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 1770px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0px;
+  margin: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.logo {
+  margin-right: 154px;
+}
+
+.nav {
+  margin-right: 115px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-list-item {
+  display: inline-block;
+  font-family: Proxima Nova-SemiBold;
+
+  position: relative;
+}
+
+.nav-list-item:not(:first-child):before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: rgba(51, 51, 51, 0.1);
+  top: 0px;
+  left: -50px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-social {
+  display: inline-block;
+}
+
+.nav-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 0px 40px 0 0;
+  padding: 0px;
+}
+
+.nav-address-date {
+  font-family: Proxima Nova-SemiBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.nav-address-number {
+  display: flex;
+  font-family: Proxima Nova-Bold;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.nav-address-number a {
+  pointer-events: painted;
+}
+
+/**
+  |============================
+  | hero
+  |============================
+*/
+
+/* slider */
+
+h1 {
+  font-family: Proxima Nova-Bold;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  padding: 0;
+}
+
+h2 {
+  font-family: Proxima Nova-Black;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 110%;
+  width: 1063px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.hero-slogan {
+  margin: 0 0 20px 0;
+}
+
+.hero-text {
+  font-weight: 700;
+  line-height: 150%;
+  width: 960px;
+  margin: 0 0 40px 0;
+}
+
+.hero-button {
+  padding: 20px 82px;
+  font-weight: 700;
+  line-height: 125%;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(132deg, #ffdf00 0%, #ffb800 100%);
+  margin-bottom: 211px;
+}
+
+/* toolBar */
+
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  margin-right: 12px;
+  border: 2px solid rgba(51, 51, 51, 0.2);
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+  background-color: #ffd00e;
+  border: 2px solid #ffd00e;
+}
+
+.radio-toolbar label:hover {
+  background-color: #ffd00e;
+  border: 2px solid #ffd00e;
+}
+
+/* bg */
+
+.hero-section {
+  position: relative;
+  overflow-x: clip;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 1074px;
+  height: 1050px;
+  background: url(../img/hero/manAndPlanet.svg) 0 0 no-repeat;
+  overflow: hidden;
+  top: -170px;
+  right: -170px;
+  pointer-events: none;
+}
+
+.header-bg {
+  width: 100%;
+  height: 100%;
+  background: url(../img/hero/circle-left.png) -10px 137px no-repeat,
+    url(../img/hero/circle-center.png) 596px 534px no-repeat,
+    url(../img/hero/small-circle.png) 1190px 137px no-repeat,
+    url(../img/hero/Rectangle\ 141.png) 0 0 no-repeat;
+  margin-bottom: 100px;
+}
+
+/* Дізнатися більше, стрілочка  */
+
+.header-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.header-more a {
+  font-family: Proxima Nova-Bold;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.header-arrow {
+  margin-bottom: 47px;
+}
+
+/**
+  |============================
+  | перевірка дз
+  |============================
+*/
+.hw-text {
+  font-family: Proxima Nova-Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  width: 815px;
+  height: 390px;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.hw-title {
+  font-family: Proxima Nova-Bold;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 125%;
+  margin-bottom: 50px;
+}
+
+.hw-first-stage img {
+  margin-right: 40px;
+}
+
+.hw-first-stage {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.hw-text div:nth-child(2n) {
+  font-family: Proxima Nova-Bold;
+}
+
+.hw-text::-webkit-scrollbar {
+  width: 7px;
+}
+
+.hw-text::-webkit-scrollbar-track {
+  background: #ffd00e;
+  border-radius: 10px;
+}
+
+/**
+  |============================
+  | найкраща компанія
+  |============================
+*/
+
+.best-company-bg {
+  height: 528px;
+  background: linear-gradient(
+      132deg,
+      rgba(255, 223, 0, 0.7) 0%,
+      rgba(255, 184, 0, 0.7) 100%
+    ),
+    #fffefc;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.best-company-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-company-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 870px;
+}
+
+.best-company-desc h2 {
+  font-family: Proxima Nova-ExtraBold;
+  width: 870px;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0;
+  padding: 0;
+}
+
+.best-company-desc-short {
+  font-family: Proxima Nova-Bold;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 125%;
+  margin: 0;
+}
+
+div.best-company-desc p {
+  font-family: Proxima Nova-Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+.best-company-customers {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+div.best-company-desc p:last-child {
+  margin-bottom: 28px;
+}
+
+/**
+  |============================
+  | advantages
+  |============================
+*/
+
+.advantages-title {
+  font-family: Proxima Nova-Bold;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 125%;
+  margin-bottom: 50px;
+}
+
+.advantages-content {
+  display: flex;
+}
+
+.circel-logo {
+  width: 670px;
+  height: 570px;
+  background: url(../img/advantages/circle-logo.svg) 0 0 no-repeat;
+}
+
+.advantages-items {
+  font-family: Proxima Nova-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 127px;
+}
+
+.advantages-items-list {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-list1 {
+  transform: translate(194px, -23px);
+}
+
+.advantages-list2 {
+  transform: translate(75px, 0px);
+}
+
+.advantages-list3 {
+  transform: translate(10px, 43px);
+}
+
+.advantages-list4 {
+  transform: translate(76px, 68px);
+}
+
+.advantages-list5 {
+  transform: translate(203px, 83px);
+}
+
+.advantages-list6 {
+  transform: translate(-100px, -18px);
+}
+
+.advantages-list7 {
+  transform: translate(12px, 22px);
+}
+
+.advantages-list8 {
+  transform: translate(54px, 71px);
+}
+
+.advantages-list9 {
+  transform: translate(20px, 120px);
+}
+
+.advantages-list10 {
+  transform: translate(-106px, 136px);
+}
+
+.advantages-items-desc {
+  margin-right: 20px;
+}
+
+.advantages-desc-right {
+  margin-left: 20px;
+}
+
+.advantages-items-title {
+  text-align: right;
+  font-family: Proxima Nova;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 10px;
+}
+
+.advantages-items-right {
+  text-align: left;
+}
+
+.advantages-text {
+  text-align: right;
+  width: 490px;
+  /* height: 60px; */
+}
+
+.advantages-text-right {
+  text-align: left;
+}
+
+.advantages-img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background: url(../img/advantages/icons-circel.png) 0 0 no-repeat;
+}
+
+.advantages-img-right {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 17px;
+}
+.advantages-img1 {
+  background: url(../img/advantages/icons-adventages/time\ 1.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img2 {
+  background: url(../img/advantages/icons-adventages/location.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img3 {
+  background: url(../img/advantages/icons-adventages/software-developer\ 1.svg)
+    50% 50% no-repeat;
+}
+
+.advantages-img4 {
+  background: url(../img/advantages/icons-adventages/atom\ 1.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img5 {
+  background: url(../img/advantages/icons-adventages/meeting\ 1.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img6 {
+  background: url(../img/advantages/icons-adventages/icon-advent6.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img7 {
+  background: url(../img/advantages/icons-adventages/client\ 1.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img8 {
+  background: url(../img/advantages/icons-adventages/module\ 1.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img9 {
+  background: url(../img/advantages/icons-adventages/workspace.svg) 50% 50%
+    no-repeat;
+}
+
+.advantages-img10 {
+  background: url(../img/advantages/icons-adventages/xbox\ 1.svg) 50% 50%
+    no-repeat;
+}
+
+/**
+  |============================
+  | переваги в фото
+  |============================
+*/
+.advantages-photo {
+  margin-bottom: 100px;
+}
+
+.advantages-photo-item {
+  display: flex;
+  gap: 14px;
+  position: relative;
+}
+
+.advantages-photo-left {
+  width: 56px;
+  height: 53px;
+  background-color: #fff;
+  position: absolute;
+  top: 38px;
+  left: -28px;
+}
+
+.advantages-photo-arrow {
+  width: 32px;
+  height: 21px;
+  background: url(../img/advantages/photos/arrow.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 16px;
+  left: 12px;
+}
+
+.advantages-photo-right {
+  width: 56px;
+  height: 53px;
+  background-color: #ffe30b;
+  position: absolute;
+  top: 117px;
+  right: -28px;
+}
+
+.arrow-right {
+  transform: rotateZ(180deg);
+}
+
+/**
+  |============================
+  | Drupal
+  |============================
+*/
+
+.drupal-title {
+  font-family: Proxima Nova-ExtraBold;
+  width: 420px;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.drupal-list {
+  display: flex;
+  gap: 30px;
+}
+
+.drupal-item {
+  width: 510px;
+  height: 160px;
+  background-color: #fff;
+  border: 2px solid rgba(69, 77, 82, 0.05);
+  border-radius: 10px;
+  padding: 20px 30px 30px 30px;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.drupal-item-color {
+  background: linear-gradient(
+    132deg,
+    rgba(255, 223, 0, 0.1) 0%,
+    rgba(255, 184, 0, 0.1) 100%
+  );
+}
+
+.drupal-company-logo {
+  width: 226px;
+  height: 46px;
+  background: url(../img/drupal/logo1.png);
+  margin-bottom: 15px;
+}
+
+.drupal-company-logo2 {
+  width: 92px;
+  height: 46px;
+  background: url(../img/drupal/logo2.png);
+  margin-bottom: 15px;
+}
+
+.drupal-company-logo3 {
+  width: 152px;
+  height: 46px;
+  background: url(../img/drupal/logo3.png);
+  margin-bottom: 15px;
+}
+
+.drupal-list-title {
+  margin: 0 0 15px 0;
+}
+
+.drupal-list-text {
+  width: 510px;
+
+  font-family: Proxima Nova-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0px;
+}
+
+.drupal-item-circle {
+  width: 266px;
+  height: 266px;
+  background: url(../img/hero/circle-center.png) 0 0 no-repeat;
+  position: relative;
+  top: -185px;
+  left: 445px;
+}
+
+/**
+  |============================
+  | З нами працюють
+  |============================
+*/
+
+.work-title {
+  font-family: Proxima Nova-ExtraBold;
+  width: 391px;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 125%;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.work-item {
+  width: 270px;
+  height: 147px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgb(75, 85, 89, 0.1);
+  position: relative;
+}
+
+
+.work-item-company1 {
+  width: 138px;
+  height: 100px;
+  background: url(../img/work/toyota.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 24px;
+  left: 66px;
+}
+
+.work-item-company2 {
+  width: 232px;
+  height: 66px;
+  background: url(../img/work/bravo.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 41px;
+  left: 19px;
+}
+
+.work-item-company3 {
+  width: 232px;
+  height: 42px;
+  background: url(../img/work/apteka.png) 0 0 no-repeat;
+  position: absolute;
+  top: 52px;
+  left: 19px;
+}
+
+.work-item-company4 {
+  width: 232px;
+  height: 48px;
+  background: url(../img/work/gemix.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 50px;
+  left: 19px;
+}
+
+.work-item-company5 {
+  width: 232px;
+  height: 74px;
+  background: url(../img/work/CSD.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 37px;
+  left: 19px;
+}
+
+.work-item-company6 {
+  width: 232px;
+  height: 92px;
+  background: url(../img/work/momentum.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 28px;
+  left: 19px;
+}
+
+.work-color-left {
+  background-color: #f4f4f4;
+  top: -32px;
+  left: -32px;
+}
+
+.work-color-right {
+  top: 47px;
+  right: -32px;
+}
+
+/**
+  |============================
+  | Благодійність
+  |============================
+*/
+
+
+
+.charity-title {
+  font-family: Proxima Nova-ExtraBold;
+  width: 293px;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 125%;
+  margin: 0 0 76px 0;
+  padding: 0;
+}
+
+.charity-all-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 164px;
+}
+
+.charity-item-title {
+  width: 749px;
+}
+
+.charity-item-text {
+  width: 749px;
+
+  font-family: Proxima Nova-Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+
+}
+
+.charity-content-img1 {
+  width: 518px;
+  height: 352px;
+  background: url(../img/charity/Bitmap-1.jpg) 0 0 no-repeat;
+}
+
+.charity-content-img2 {
+  width: 413px;
+  height: 347px;
+  background: url(../img/charity/Bitmap-2.jpg) 0 0 no-repeat;
+  transform: translate(-357px, 75px);
+  margin-right: 0;
+}
+
+.charity-content-img3 {
+  width: 375px;
+  height: 280px;
+  background: url(../img/charity/Bitmap-3.jpg) 0 0 no-repeat;
+  transform: translate(17px, -163px);
+  margin-bottom: 50px;
+}
+
+
+/* благодійність елементи */
+
+.charity-list-all {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;  
+  margin-bottom: 100px;
+
+}
+
+.charity-list-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 570px;
+  height: 257px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgb(75, 85, 89, 0.1);
+
+}
+
+.charity-list-element:hover {
+  background-color: #FFD00E;
+}
+
+.charity-list-title {
+  margin: 16px 0;
+}
+
+.charity-list-icon1 {
+  width: 42px;
+  height: 68px;
+  background: url(../img/charity/icon/Group.png) 0 0 no-repeat;
+}
+
+.charity-list-icon2 {
+  width: 80px;
+  height: 80px;
+  background: url(../img/charity/icon/power.svg) 0 0 no-repeat;
+}
+
+.charity-list-icon3 {
+  width: 80px;
+  height: 80px;
+  background: url(../img/charity/icon/pc.svg) 0 0 no-repeat;
+}
+
+.charity-list-icon4 {
+  width: 80px;
+  height: 80px;
+  background: url(../img/charity/icon/animal.svg) 0 0 no-repeat;
+}
+
+.charity-list-icon5 {
+  width: 80px;
+  height: 80px;
+  background: url(../img/charity/icon/clear.svg) 0 0 no-repeat;
+}
+
+.charity-list-icon6 {
+  width: 80px;
+  height: 80px;
+  background: url(../img/charity/icon/book.svg) 0 0 no-repeat;
+}
+
+.charity-list-text {
+  font-family: Proxima Nova-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 125%;
+  padding: 0 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-bg {
+  width: 100%;
+  height: 405px;
+  background-color: #FFD00E;
+  background: url(../img/footer/footer-left-bg.png) 0 0 no-repeat, url(../img/footer/footer-bg.png) 0 0 no-repeat;
+}
+
+
+.footer-content {
+  display: flex;
+}
+
+.footer-content-left {
+  width: 25%;
+  height: 362px;
+  padding-top: 43px;
+}
+
+
+.footer-logo {
+  width: 266px;
+  height: 66px;
+  background: url(../img/footer/footer-logo.png);
+  margin-bottom: 32px;
+}
+
+.footer-text-left {
+font-family: Proxima Nova-Regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 125%;
+}
+
+.footer-margin {
+  margin-bottom: 70px;
+}
+
+.footer-content-right {
+  display: flex;
+ justify-content: space-between;
+  width: 75%;
+  height: 405px;
+  color: #fff;
+  padding-left: 130px;  
+  margin-top: 50px;
+
+
+}
+
+.footer-right-title {
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.footer-right-tel a {
+  font-family: Proxima Nova-Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 125%;
+  color: #fff;
+}
+
+.footer-right-tel {
+  margin-bottom: 20px;
+}
+
+.footer-right-email {
+  font-family: Proxima Nova-Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 125%;
+  margin-bottom: 23px;
+}
+
+.foooter-social-icons {
+  display: flex;
+  gap: 45px;
+}
+
+.footer-social-icon1 {
+  width: 13px;
+  height: 22px;
+  background: url(../img/footer/social/facebook\ 2.svg) 0 0 no-repeat; 
+}
+
+.footer-social-icon2 {
+  width: 22px;
+  height: 22px;
+  background: url(../img/footer/social/instagram\ 2.svg) 0 0 no-repeat; 
+}
+
+.footer-social-icon3 {
+  width: 29px;
+  height: 22px;
+  background: url(../img/footer/social/Google+.svg) 0 0 no-repeat; 
+}
+
+.footer-social-icon4 {
+  width: 22px;
+  height: 22px;
+  background: url(../img/footer/social/twitter.png) 0 0 no-repeat; 
+}
+
+.footer-office-title {
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.footer-office-des {
+  font-family: Proxima Nova-Regular;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 125%;
+  width: 293px;
+  margin-bottom: 20px;
+}
+
+.footer-gps {
+  font-family: Proxima Nova-Regular;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  color: #fff;
+}
+
+.footer-gps a {
+  
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-right-social {
+ width: 390px;
+}
+
+.footer-right-img {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 44px;
+  row-gap: 24px;
+}
+
+.footer-social-logo1 {
+  width: 105px;
+  height: 65px;
+  background: url(../img/best-company/Ukraine.png);
+}
+
+.footer-social-logo2 {
+  width: 196px;
+  height: 60px;
+  background: url(../img/footer/company/alternative.png);
+}
+
+.footer-social-logo3 {
+  width: 206px;
+  height: 36px;
+  background: url(../img/footer/company/helpdesk.png);
+}
